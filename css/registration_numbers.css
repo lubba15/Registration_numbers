@@ -1,0 +1,25 @@
+h1 {
+    display: block;
+      text-align:center;
+      position:relative;
+    font-weight: bold;
+    font-size: 70px;
+  }
+
+body{
+  background-color:pink;
+  }
+
+ ul{
+background-color: yellow;
+border-radius: 50px;
+border: 5px solid black;
+ width:262px;
+ margin-left:408px;
+ height: 110px;
+ }
+ ul{
+ text-align: center;
+ font-size: 56px;
+ position: relative;
+}
