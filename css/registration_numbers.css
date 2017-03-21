@@ -1,25 +1,44 @@
+body{
+  background-image: url('https://i.ytimg.com/vi/BIh1Sm4DyAE/maxresdefault.jpg');
+}
 h1 {
     display: block;
       text-align:center;
       position:relative;
     font-weight: bold;
     font-size: 70px;
-  }
 
-body{
-  background-color:pink;
-  }
+}
+.registration{
+padding-left: 22%;
+font-size: 35px;
+}
+#name {
+height: 30px;
+width:25%;
+font-weight: bold;
+font-size: 70%;
+padding: 1px 6px;
+}
+#list{
+background-color:brown;
 
- ul{
-background-color: yellow;
-border-radius: 50px;
-border: 5px solid black;
- width:262px;
- margin-left:408px;
- height: 110px;
- }
- ul{
- text-align: center;
- font-size: 56px;
- position: relative;
+}
+div {
+    width: 50%;
+    padding: 4%;
+    margin: auto
+  }
+.myReg{
+    background-color: gold;
+     background-position: 10px 10px;
+     border: 3px solid black;
+     border-radius: 28px;
+     font-weight: bold;
+     font-size: 258%;
+     margin-bottom: 12px;
+     margin-top: 5px;
+     padding: 12px 20px 12px 40px;
+     text-align: center;
+     width: 178px;
 }
