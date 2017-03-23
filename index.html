@@ -4,20 +4,28 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/registration_numbers.css">
     <title></title>
-    <h1>Registration Number List:</h1>
+    <h1>Registration Numbers :</h1>
   </head>
   <body>
     <div class="registration"><label for = "registration">registration_numbers </label>
     <input type="text" id="name" placeholder="type reg_number......" value=""></di>
+    <button type="button" onclick="registrtionNumbers();" id="bttn">Add</button>
+    <br>
     <div class="regNumber">
-      <button type="button" onclick="registrtionNumbers();" id="bttn">Add</button>
     </div>
+    <div class="Towns">
+      <select class="box" >
 
+        <option value="CA">Cape Town</option>
+        <option value="CJ">Paarl</option>
+        <option value="CY">Bellville</option>
+        <option value="AllReg">All</option>
+      </select>
     <div class=" list">
     <ul id='regNumber'></ul>
-    <hi> number plates </h1>
      </div>
-  </body>
-  <script src="registration_numbers.js" charset="utf-8"></script>
+     <h4>Number plates </h4>
+    </body>
+      <script src="registration_numbers.js" charset="utf-8"></script>
 
 </html>
