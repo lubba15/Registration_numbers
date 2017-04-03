@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/registration_numbers.css">
-    <title></title>
-    <h1>Registration Numbers :</h1>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/registration_numbers.css">
+  <title>Registration Numbers :</title>
+  <h1>Registration Numbers :</h1>
   </head>
   <body>
-    <div class="registration"><label for = "registration">registration_numbers </label>
-    <input type="text" id="name" placeholder="type reg_number......" value=""></di>
-    <button type="button" onclick="registrtionNumbers();" id="bttn">Add</button>
-    <br>
-    <div class="regNumber">
-    </div>
-    <div class="Towns">
-      <select class="box" >
+  <div class="textbox">
+  <label>  registration number</label>
+  <input type="text" id="name" placeholder="type reg Number">
+  <button type="button" onclick="registration_numbers();" id="bttn">Add</button>
+  </div>
 
-        <option value="CA">Cape Town</option>
-        <option value="CJ">Paarl</option>
-        <option value="CY">Bellville</option>
-        <option value="AllReg">All</option>
-      </select>
-    <div class=" list">
-    <ul id='regNumber'></ul>
-     </div>
-     <h4>Number plates </h4>
-    </body>
-      <script src="registration_numbers.js" charset="utf-8"></script>
+    <br>
+  <div class="Towns">
+  <input list="drop" id="option" placeholder="select a Town">
+  <datalist id="drop">
+  <option value="Cape Town"></option>
+  <option value="paarl"></option>
+  <option value="bellville"></option>
+  <option value="All"></option>
+  </datalist>
+  <button type="filter" onclick="checkReg();" id="myFilter">Filter</button>
+  <h4>Number plates </h4>
+  <div class=" list"></div>
+  <ul id='regNumber'></ul>
+  </div>
+
+  </body>
+  <script src="registration_numbers.js" charset="utf-8"></script>
 
 </html>

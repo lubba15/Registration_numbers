@@ -1,53 +1,45 @@
 var ul = document.getElementById('regNumber');
- function registrtionNumbers() {
-   var input = document.getElementById('name').value;
+var input = document.querySelector('#name');
 
-   var plate = document.createElement('div');
-  //  var li = document.appendChild('li');
+ function registration_numbers() {
+
+   if (input.value ==="" || input.value.trim("").length <= 0) {
+     return
+   }
+   var plate = document.createElement('li')
    plate.classList.add('myReg');
-   var li = document.createTextNode(input);
-   plate.appendChild(li);
-   document.body.appendChild(plate);
+   plate.innerHTML = input.value;
+    ul.appendChild(plate);
+
    document.getElementById("name").value = "";
-  // regNumbers.push(plate);
  }
- // var user = document.getElementById("myInput").value;
-    //var filter = user.toUpperCase();
 
+  function checkReg(){
+  var option = document.getElementById('option').value;
+  var capetown = document.getElementById('CapeTown');
+  var Bellville = document.getElementById('bellville');
+  var Paarl = document.getElementById('paarl');
+  var All = document.getElementById('all');
+//  var ul = document.querySelectorAll('myReg');
 
-function allTown(){
-    if (document.getElementById('Cape Town').checked) {
-        checkTown('CA');
+     for (var i = 0; i < ul.children.length; i++){
+     var regList = ul;
+    var towns = ul.children[i].textContent.toUpperCase();
 
-    } else if(document.getElementById('Paarl').checked) {
-        checkTown('CJ');
-
-    } else if (document.getElementById('Bellville').checked) {
-        checkTown('CY')
-
-    } else if (document.getElementById('All').checked) {
-        document.body.appendChild(plate);
-}
-}
-function checkTownReg(location) {
-  var allTown = [];
-  for (var i = 0; i < regNumbers.length; i++) {
-    if (document.body.children[i].textContent.startsWith(location)) {
-      // fromTownReg.push(regNumbers)
-      document.body.children[i].style.display = 'block';
-    }else{
-      document.body.children[i].style.display = 'none';
+      if(option === "paarl" && towns.startsWith("CJ")){
+      regList.children[i].style.display = 'block'
     }
-  }
-}
-//for (i = 0; i < tr.length; i++) {
-//    td = tr[i].getElementsByTagName("td")[0];
-  //  if (td) {
-  //    if (td.innerHTML.toUpperCase().indexOf(filter) > -1) {
-    //    tr[i].style.display = "";
-    //  } else {
-  //      tr[i].style.display = "none";
-    //  }
-    //}
-//  }
-//
+     else if(option === "Cape Town" && towns.startsWith("CA")){
+     regList.children[i].style.display = 'block';
+   }
+    else if(option === "Bellville" && towns.startsWith("CY")){
+     regList.children[i].style.display = 'block';
+   }
+   else if(option === "All"){
+     regList.children[i].style.display = 'block';
+   }
+   else {
+    regList.children[i].style.display = 'none';
+    }
+   }
+ };

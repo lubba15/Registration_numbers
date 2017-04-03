@@ -25,7 +25,7 @@ background-color:brown;
 
 }
 div {
-    width: 50%;
+    width: 47%;
     padding: 0%;
     margin: auto
   }
@@ -40,16 +40,37 @@ div {
      margin-top: 5px;
      padding: 12px 20px 12px 40px;
      text-align: center;
-     width: 207px;
+     width: 262px;
 }
 #bttn{
-
-  width: 15%;
+  padding: 0%;
+  width: 7%;
   font-weight: bold;
-  font-size: 53%;
+  font-size: 50%;
+  height: 35px;
+
+}
+.textbox{
+  font-weight: bold;
+  font-size: 180%;
   height: 35px;
 }
-#myfilter{
-  font-size: 60%;
-  padding: 1px 6px;
+.town{
+  font-weight: bold;
+  font-size: 90%;
+  height: 25px;
+}
+h4{
+  font-weight: bold;
+  font-size: 180%;
+  height: 35px;
+}
+
+ul{
+  list-style:none;
+}
+myFilter{
+  font-weight: bold;
+  font-size: 90%;
+  height: 25px;
 }
